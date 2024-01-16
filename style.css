@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*   transition-property: ;
+  transition-duration: ;
+  transition-timing-function: ;
+  transition-delay: ; 
+  transform
+  matrix
+  */
+}
+/* 
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35vh;
+} */
+
+#drink {
+  height: 100px;
+  width: 100px;
+  background-color: salmon;
+  /* font-size: 100px; */
+
+  transition: 1s;
+  animation-name: square;
+  animation-duration: 3s;
+  animation-direction: 4;
+  animation-iteration-count: infinite;
+}
+
+@keyframes square {
+  /* 0% {
+    background-color: salmon;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: blueviolet;
+    left: 200px;
+    top: 0px;
+  } */
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(360deg);
+  }
+
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+#drink:hover {
+  height: 600px;
+  width: 600px;
+  transform: rotate(20deg);
+  transform: skewY(20deg);
+}
